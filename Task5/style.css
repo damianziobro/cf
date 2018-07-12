@@ -1,0 +1,31 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-image: url('pizza-icon.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border: 7px solid #000000;
+    transition: 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover::after {
+    content: 'Pizza';
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.square:hover {
+    background-image: none;
+}

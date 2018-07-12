@@ -1,0 +1,149 @@
+.page {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.page__header {
+    background-color: #222222;
+    position: fixed;
+    width: 100%;
+}
+
+.page__header .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page__nav-list {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.page__nav-item {
+    margin: 0 20px;
+}
+
+.page__nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.page__nav-link:after {
+    margin-top: 5px;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 5%;
+    background-color: #222222;
+    transition: .5s;
+}
+
+.page__nav-link:after {
+    color: #ffffff;
+}
+
+.page__nav-link:hover::after {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.page__main {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.page__sidebar {
+    border-right: 1px solid #D3D3D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page__sidebar-element {
+    margin: 60px;
+    width: 200px;
+    height: 200px;
+    background-color: #D3D3D3;
+}
+
+.page__main-text {
+    margin: 40px;
+    max-width: 530px;
+}
+
+.page__footer {
+    background-color: #222222;
+}
+
+.page__footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__footer-copyright {
+    color: #eeeeee;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+    .page__header .wrapper {
+        justify-content: center;
+    }
+    .page__main {
+        flex-direction: column;
+    }
+    .page__sidebar {
+        border: 0;
+        order: 2;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .page__sidebar-element {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .page__main-text {
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .page__sidebar-element {
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .page__main-text {
+        font-size: 14px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .page__nav-link {
+        font-size: 16px;
+    }
+}

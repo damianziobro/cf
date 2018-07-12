@@ -1,0 +1,44 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slider {
+    max-width: 1000px;
+    display: flex;
+}
+
+.slider__slides {
+    width: inherit;
+}
+
+.slider__slide {
+    width: 100%;
+    display: none;
+}
+
+.slider__change-slide-btn {
+    border: none;
+    width: 50px;
+    height: inherit;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.slider__change-slide-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slider__change-slide-btn--left {
+    background: url(back.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.slider__change-slide-btn--right {
+    background: url(next.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
